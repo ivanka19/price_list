@@ -27,3 +27,12 @@ a {
     outline: none;
     color: inherit;
 }
+
+input,
+button,
+textarea,
+select {
+    display: block;
+    outline: none;
+    font: inherit;
+}

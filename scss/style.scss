@@ -47,7 +47,7 @@ body {
     }
 }
 
-@mixin button ($clr) {
+@mixin button ($clr, $shclr: $dark-color) {
     display: inline-block;
     text-align: center;
     position: relative;
@@ -55,9 +55,9 @@ body {
     left: 0px;
     padding: 20px;
     background-color: $clr;
-    border: 3px solid #2D2D2D;
-    box-shadow: 7px 7px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 1px 1px 0px #2D2D2D;
-    transition: all linear .1s;
+    border: 3px solid $dark-color;
+    box-shadow: 1px 1px 0px $shclr, 2px 2px 0px $shclr, 3px 3px 0px $shclr, 4px 4px 0px $shclr, 5px 5px 0px $dark-color, 6px 6px 0px $dark-color, 7px 7px 0px $dark-color;
+    transition: .1s linear all;
     margin-bottom: 7px;
     font-weight: 700;
 
@@ -65,7 +65,7 @@ body {
     &:focus {
         top: 7px;
         left: 7px;
-        box-shadow: 0px 0px 0px #2D2D2D;
+        box-shadow: 0px 0px 0px $dark-color;
     }
 
     &:active {
@@ -110,5 +110,50 @@ body {
         .reg {
             @include button($clr: $pink-color);
         }
+    }
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+
+    h2 {
+        font-family: $main-font;
+        font-weight: 600;
+        width: auto;
+        margin: 30px auto 60px;
+        border-right: 13px solid $dark-color;
+        display: inline-block;
+        padding-right: 20px;
+    }
+}
+
+@use "sass:math";
+
+.form {
+    width: 520px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        border: 3px solid $dark-color;
+
+        &:active,
+        &:focus {
+            box-shadow: 0px 0px 0px 5px #92FFFF;
+        }
+    }
+
+    textarea {
+        min-height: 190px;
+        resize: vertical;
+    }
+
+    input[type="submit"] {
+        @include button($clr: #fff, $shclr: $pink-color);
+
     }
 }
