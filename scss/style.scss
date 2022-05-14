@@ -119,6 +119,7 @@ body {
     h2 {
         font-family: $main-font;
         font-weight: 600;
+        font-size: 48px;
         width: auto;
         margin: 30px auto 60px;
         border-right: 13px solid $dark-color;
@@ -127,7 +128,53 @@ body {
     }
 }
 
-@use "sass:math";
+.lists__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .lists__inner__item {
+        width: 320px;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 30px 20px 50px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        border: 2px solid #fff;
+        text-align: center;
+        cursor: pointer;
+        transition: .1s linear all;
+
+        .img {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 30px;
+
+            // Потім видалити
+            height: 280px;
+            background-color: #ccc;
+
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 32px;
+            letter-spacing: 0.085em;
+        }
+
+        &:hover,
+        &:focus {
+            top: -7px;
+            left: -7px;
+            box-shadow: 7px 7px 0px $dark-color;
+            border: 2px solid $dark-color;
+        }
+    }
+}
+
 
 .form {
     width: 520px;
@@ -147,12 +194,12 @@ body {
     }
 
     textarea {
-        min-height: 190px;
         resize: vertical;
+        min-height: 190px;
+        max-height: 500px;
     }
 
     input[type="submit"] {
         @include button($clr: #fff, $shclr: $pink-color);
-
     }
 }
