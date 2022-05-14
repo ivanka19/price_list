@@ -305,3 +305,35 @@ body {
   right: 0;
   margin-top: -30px;
 }
+
+.footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .nav a {
+  width: auto;
+  display: block;
+  font-weight: 500;
+  margin: 70px 50px 50px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  background-color: #FFDD63;
+}
+
+.footer .nav a:hover, .footer .nav a:active {
+  color: #FFA9B8;
+}
+
+.footer .nav a::after {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 38px;
+  background-color: #2D2D2D;
+}
