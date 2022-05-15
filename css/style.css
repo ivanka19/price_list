@@ -320,20 +320,33 @@ body {
   width: auto;
   display: block;
   font-weight: 500;
-  margin: 70px 50px 50px;
+  margin: 70px 50px 50px 0px;
   -webkit-transition: all 0.1s linear;
   transition: all 0.1s linear;
-  background-color: #FFDD63;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .footer .nav a:hover, .footer .nav a:active {
-  color: #FFA9B8;
+  text-decoration: underline;
 }
 
 .footer .nav a::after {
   content: "";
   display: block;
+  position: relative;
+  float: right;
+  margin-top: 15px;
+  margin-left: 50px;
   height: 6px;
   width: 38px;
   background-color: #2D2D2D;
+}
+
+.footer .nav a:last-of-type {
+  margin-right: 0px;
+}
+
+.footer .nav a:last-of-type::after {
+  display: none;
 }

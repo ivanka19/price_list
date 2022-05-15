@@ -230,22 +230,33 @@ body {
             width: auto;
             display: block;
             font-weight: 500;
-            margin: 70px 50px 50px;
+            margin: 70px 50px 50px 0px;
             transition: all 0.1s linear;
-            background-color: #FFDD63;
+            box-sizing: content-box;
 
             &:hover,
             &:active {
-                color: #FFA9B8;
+                text-decoration: underline;
             }
 
             &::after {
                 content: "";
                 display: block;
+                position: relative;
+                float: right;
+                margin-top: 15px;
+                margin-left: 50px;
                 height: 6px;
                 width: 38px;
                 background-color: $dark-color;
+            }
 
+            &:last-of-type {
+                margin-right: 0px;
+
+                &::after {
+                    display: none;
+                }
             }
         }
     }
