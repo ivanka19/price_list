@@ -26,6 +26,7 @@ a {
     text-decoration: none;
     outline: none;
     color: inherit;
+    transition: all 0.1s linear;
 }
 
 input,
@@ -35,4 +36,5 @@ select {
     display: block;
     outline: none;
     font: inherit;
+    transition: all 0.1s linear;
 }

@@ -20,9 +20,10 @@
     <div class="intro">
         <header class="header">
             <div class="conteiner">
-                <img src="img/logo.svg" alt="">
+                <img src="img/logo.svg" class="logo" alt="">
             </div>
         </header>
+
         <div class="conteiner">
             <h1>Розробіть прейскурант для свого бізнесу за 10 хвилин</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros enim, scelerisque non augue a,
@@ -54,10 +55,12 @@
         <div class="conteiner">
             <h2>Зв’яжіться з нами</h2>
             <form action="" class="form">
+                <!-- PHP Обробка форми -->
                 <input type="text" placeholder="Ваше ім'я" name="name" required>
-                <input type="text" placeholder="Номер телефону" id="phone" name="phone" required>
+                <input type="email" placeholder="Електронна адреса" name="email" required>
                 <textarea id="message" placeholder="Ваше повідомлення..." name="message" required></textarea>
-                <input type="submit" class="btn" value="Надіслати">
+                <input type="submit" value="Надіслати">
+                <!-- PHP -->
             </form>
         </div>
     </section>
@@ -67,8 +70,8 @@
 
         <nav class="nav">
             <a href="">Правила користування</a>
-            <a href="">Вхід до системи</a>
-            <a href="">Реєстрація</a>
+            <a href="pages/authorization.html">Вхід до системи</a>
+            <a href="pages/registration.html">Реєстрація</a>
         </nav>
     </footer>
 </body>

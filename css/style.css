@@ -27,6 +27,8 @@ a {
   text-decoration: none;
   outline: none;
   color: inherit;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 input,
@@ -36,6 +38,8 @@ select {
   display: block;
   outline: none;
   font: inherit;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 body {
@@ -67,8 +71,8 @@ body {
           align-items: center;
 }
 
-.header img {
-  width: 750px;
+.header .logo {
+  width: 50%;
   display: block;
   position: absolute;
   top: 70px;
@@ -76,6 +80,100 @@ body {
   margin-right: auto;
   left: 0;
   right: 0;
+}
+
+.header h2 {
+  display: block;
+  font-family: "Source Code Pro", monospace;
+  font-size: 48px;
+  font-weight: 600;
+  border-left: 13px solid #2D2D2D;
+  padding: 0;
+  padding-left: 24px;
+  line-height: 1em;
+}
+
+.header .mini_logo {
+  width: 400px;
+  height: 100%;
+}
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registration .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.registration .header .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration .form {
+  width: 600px;
+}
+
+.registration .form input[type="submit"] {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  padding: 20px;
+  background-color: #FFDD63;
+  border: 3px solid #2D2D2D;
+  -webkit-box-shadow: 1px 1px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
+          box-shadow: 1px 1px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.registration .form input[type="submit"]:hover, .registration .form input[type="submit"]:focus {
+  top: 7px;
+  left: 7px;
+  -webkit-box-shadow: 0px 0px 0px #2D2D2D;
+          box-shadow: 0px 0px 0px #2D2D2D;
+}
+
+.registration .form input[type="submit"]:active {
+  -webkit-box-shadow: inset 7px 7px 0px #ffcc17;
+          box-shadow: inset 7px 7px 0px #ffcc17;
+}
+
+.registration .form .reg {
+  background-color: #FFA9B8;
+}
+
+.registration .form p {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 0;
+  margin: 20px 0px;
+}
+
+.registration .form p a {
+  font-weight: 700;
+}
+
+.registration .form p a:hover, .registration .form p a:focus {
+  text-decoration: underline;
 }
 
 .intro {
@@ -120,8 +218,6 @@ body {
   border: 3px solid #2D2D2D;
   -webkit-box-shadow: 1px 1px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
           box-shadow: 1px 1px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
-  -webkit-transition: .1s linear all;
-  transition: .1s linear all;
   margin-bottom: 7px;
   font-weight: 700;
 }
@@ -149,8 +245,6 @@ body {
   border: 3px solid #2D2D2D;
   -webkit-box-shadow: 1px 1px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
           box-shadow: 1px 1px 0px #2D2D2D, 2px 2px 0px #2D2D2D, 3px 3px 0px #2D2D2D, 4px 4px 0px #2D2D2D, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
-  -webkit-transition: .1s linear all;
-  transition: .1s linear all;
   margin-bottom: 7px;
   font-weight: 700;
 }
@@ -208,8 +302,6 @@ body {
   border: 2px solid #fff;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: .1s linear all;
-  transition: .1s linear all;
 }
 
 .lists__inner .lists__inner__item .img {
@@ -250,8 +342,8 @@ body {
 .form input:active, .form input:focus,
 .form textarea:active,
 .form textarea:focus {
-  -webkit-box-shadow: 0px 0px 0px 5px #92FFFF;
-          box-shadow: 0px 0px 0px 5px #92FFFF;
+  -webkit-box-shadow: 0px 0px 0px 7px #92FFFF;
+          box-shadow: 0px 0px 0px 7px #92FFFF;
 }
 
 .form textarea {
@@ -271,8 +363,6 @@ body {
   border: 3px solid #2D2D2D;
   -webkit-box-shadow: 1px 1px 0px #FFA9B8, 2px 2px 0px #FFA9B8, 3px 3px 0px #FFA9B8, 4px 4px 0px #FFA9B8, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
           box-shadow: 1px 1px 0px #FFA9B8, 2px 2px 0px #FFA9B8, 3px 3px 0px #FFA9B8, 4px 4px 0px #FFA9B8, 5px 5px 0px #2D2D2D, 6px 6px 0px #2D2D2D, 7px 7px 0px #2D2D2D;
-  -webkit-transition: .1s linear all;
-  transition: .1s linear all;
   margin-bottom: 7px;
   font-weight: 700;
 }
@@ -321,8 +411,6 @@ body {
   display: block;
   font-weight: 500;
   margin: 70px 50px 50px 0px;
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }

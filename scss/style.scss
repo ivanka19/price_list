@@ -24,29 +24,6 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    width: 100%;
-    min-height: 100px;
-    background-color: $blue-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    align-items: center;
-
-    img {
-        width: 750px;
-        display: block;
-        position: absolute;
-        top: 70px;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-    }
-}
-
 @mixin button ($clr, $shclr: $dark-color) {
     display: inline-block;
     text-align: center;
@@ -57,7 +34,6 @@ body {
     background-color: $clr;
     border: 3px solid $dark-color;
     box-shadow: 1px 1px 0px $shclr, 2px 2px 0px $shclr, 3px 3px 0px $shclr, 4px 4px 0px $shclr, 5px 5px 0px $dark-color, 6px 6px 0px $dark-color, 7px 7px 0px $dark-color;
-    transition: .1s linear all;
     margin-bottom: 7px;
     font-weight: 700;
 
@@ -70,6 +46,92 @@ body {
 
     &:active {
         box-shadow: inset 7px 7px 0px darken($clr, 15%);
+    }
+}
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    background-color: $blue-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    align-items: center;
+
+    .logo {
+        width: 50%;
+        display: block;
+        position: absolute;
+        top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    h2 {
+        display: block;
+        font-family: $main-font;
+        font-size: 48px;
+        font-weight: 600;
+        border-left: 13px solid $dark-color;
+        padding: 0;
+        padding-left: 24px;
+        line-height: 1em;
+    }
+
+    .mini_logo {
+        width: 400px;
+        height: 100%;
+    }
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+
+    & .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .header .conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 600px;
+
+        input[type="submit"] {
+            @include button($clr: $yellow-color, $shclr: $dark-color);
+
+
+        }
+
+        // ERROR -- COLOR DONT CHANGE
+        .reg {
+            background-color: #FFA9B8;
+        }
+
+        p {
+            width: 100%;
+            border: none;
+            text-align: center;
+            padding: 0;
+            margin: 20px 0px;
+
+            a {
+                font-weight: 700;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
 
@@ -147,7 +209,6 @@ body {
         border: 2px solid #fff;
         text-align: center;
         cursor: pointer;
-        transition: .1s linear all;
 
         .img {
             display: inline-block;
@@ -176,7 +237,6 @@ body {
     }
 }
 
-
 .form {
     width: 520px;
     margin: 0 auto;
@@ -190,7 +250,7 @@ body {
 
         &:active,
         &:focus {
-            box-shadow: 0px 0px 0px 5px #92FFFF;
+            box-shadow: 0px 0px 0px 7px #92FFFF;
         }
     }
 
@@ -231,7 +291,6 @@ body {
             display: block;
             font-weight: 500;
             margin: 70px 50px 50px 0px;
-            transition: all 0.1s linear;
             box-sizing: content-box;
 
             &:hover,
