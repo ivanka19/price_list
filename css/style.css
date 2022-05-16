@@ -72,7 +72,7 @@ body {
 }
 
 .header .logo {
-  width: 50%;
+  max-width: 50%;
   display: block;
   position: absolute;
   top: 70px;
