@@ -88,52 +88,6 @@ body {
     }
 }
 
-.registration {
-    display: flex;
-    justify-content: center;
-
-    & .header {
-        display: flex;
-        justify-content: center;
-    }
-
-    & .header .conteiner {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .form {
-        width: 600px;
-
-        input[type="submit"] {
-            @include button($clr: $yellow-color, $shclr: $dark-color);
-
-
-        }
-
-        // ERROR -- COLOR DONT CHANGE
-        .reg {
-            background-color: #FFA9B8;
-        }
-
-        p {
-            width: 100%;
-            border: none;
-            text-align: center;
-            padding: 0;
-            margin: 20px 0px;
-
-            a {
-                font-weight: 700;
-
-                &:hover,
-                &:focus {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
 
 .intro {
     width: 100%;
@@ -164,13 +118,15 @@ body {
             margin-right: 50px;
         }
 
-        .log {
+        .log_button,
+        .reg_button {
             @include button($clr: $yellow-color);
         }
 
-        .reg {
-            @include button($clr: $pink-color);
+        .reg_button {
+            background-color: $pink-color;
         }
+
     }
 }
 
@@ -315,6 +271,51 @@ body {
 
                 &::after {
                     display: none;
+                }
+            }
+        }
+    }
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 0px;
+
+    & .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .header .conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 600px;
+
+        .autorization__form__submit {
+            @include button($clr: $yellow-color, $shclr: $dark-color);
+        }
+
+        .registration__form__submit {
+            @include button($clr: $pink-color, $shclr: $dark-color);
+        }
+
+        p {
+            width: 100%;
+            border: none;
+            text-align: center;
+            padding: 0;
+            margin: 20px 0px;
+
+            a {
+                font-weight: 700;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
                 }
             }
         }
