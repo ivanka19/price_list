@@ -1,5 +1,3 @@
-@import "_nullStyle";
-
 $regular-font: 'Lato', sans-serif;
 $main-font: 'Source Code Pro', monospace;
 
@@ -8,6 +6,47 @@ $dark-color: #2D2D2D;
 $yellow-color: #FFDD63;
 $blue-color: #92FFFF;
 $pink-color: #FFA9B8;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    transition: all 0.1s linear;
+}
+
+input,
+button,
+textarea,
+select {
+    display: block;
+    outline: none;
+    font: inherit;
+    transition: all 0.1s linear;
+}
 
 body {
     font-family: $regular-font;
