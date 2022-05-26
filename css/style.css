@@ -33,6 +33,16 @@ select {
   display: block;
 }
 
+.header h2 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  border-left: 13px solid #2D2D2D;
+}
+
+.header .mini_logo {
+  width: 100%;
+}
+
 .intro h1 {
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
@@ -123,7 +133,7 @@ select {
   color: #2D2D2D;
 }
 
-.company-list .card {
+.company-list .carousel .card {
   color: #2D2D2D;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 0;
@@ -133,11 +143,11 @@ select {
   cursor: pointer;
 }
 
-.company-list .card img {
+.company-list .carousel .card img {
   width: 100%;
 }
 
-.company-list .card:hover, .company-list .card:focus {
+.company-list .carousel .card:hover, .company-list .carousel .card:focus {
   top: -7px;
   left: -7px;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
@@ -224,4 +234,80 @@ select {
 
 .footer p {
   text-align: center;
+}
+
+.registration .form .autorization-submit {
+  width: 100%;
+  border-radius: 0;
+  font: inherit;
+  color: #2D2D2D;
+  font-weight: 700;
+  border: 3px solid #2D2D2D;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: #FFDD63;
+  -webkit-box-shadow: 7px 7px 0px #2D2D2D;
+          box-shadow: 7px 7px 0px #2D2D2D;
+  margin-bottom: 7px;
+}
+
+.registration .form .autorization-submit:hover, .registration .form .autorization-submit:focus {
+  top: 7px;
+  left: 7px;
+  -webkit-box-shadow: 0px 0px 0px #2D2D2D;
+          box-shadow: 0px 0px 0px #2D2D2D;
+}
+
+.registration .form .autorization-submit:active {
+  -webkit-box-shadow: inset 7px 7px 0px #ffcc17;
+          box-shadow: inset 7px 7px 0px #ffcc17;
+}
+
+.registration .form .registration-submit {
+  width: 100%;
+  border-radius: 0;
+  font: inherit;
+  color: #2D2D2D;
+  font-weight: 700;
+  border: 3px solid #2D2D2D;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-color: #FFA9B8;
+  -webkit-box-shadow: 7px 7px 0px #2D2D2D;
+          box-shadow: 7px 7px 0px #2D2D2D;
+  margin-bottom: 7px;
+}
+
+.registration .form .registration-submit:hover, .registration .form .registration-submit:focus {
+  top: 7px;
+  left: 7px;
+  -webkit-box-shadow: 0px 0px 0px #2D2D2D;
+          box-shadow: 0px 0px 0px #2D2D2D;
+}
+
+.registration .form .registration-submit:active {
+  -webkit-box-shadow: inset 7px 7px 0px #ff5d79;
+          box-shadow: inset 7px 7px 0px #ff5d79;
+}
+
+.registration .form p {
+  text-align: center;
+}
+
+.registration .form p a {
+  color: #2D2D2D;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear;
+}
+
+.registration .form p a:hover, .registration .form p a:active, .registration .form p a:focus {
+  border-bottom: 3px solid #2D2D2D;
 }
