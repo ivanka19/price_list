@@ -1,0 +1,363 @@
+$regular-font: 'Lato', sans-serif;
+$main-font: 'Source Code Pro', monospace;
+
+$white-color: #FFFFFF;
+$dark-color: #2D2D2D;
+$yellow-color: #FFDD63;
+$blue-color: #92FFFF;
+$pink-color: #FFA9B8;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+    transition: all 0.1s linear;
+}
+
+input,
+button,
+textarea,
+select {
+    display: block;
+    outline: none;
+    font: inherit;
+    transition: all 0.1s linear;
+}
+
+body {
+    font-family: $regular-font;
+    color: $dark-color;
+    font-size: 24px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+@mixin button ($clr, $shclr: $dark-color) {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    background-color: $clr;
+    border: 3px solid $dark-color;
+    box-shadow: 1px 1px 0px $shclr, 2px 2px 0px $shclr, 3px 3px 0px $shclr, 4px 4px 0px $shclr, 5px 5px 0px $dark-color, 6px 6px 0px $dark-color, 7px 7px 0px $dark-color;
+    margin-bottom: 7px;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        top: 7px;
+        left: 7px;
+        box-shadow: 0px 0px 0px $dark-color;
+    }
+
+    &:active {
+        box-shadow: inset 7px 7px 0px darken($clr, 15%);
+    }
+}
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    background-color: $blue-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    align-items: center;
+
+    .logo {
+        max-width: 50%;
+        display: block;
+        position: absolute;
+        top: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    h2 {
+        display: block;
+        font-family: $main-font;
+        font-size: 48px;
+        font-weight: 600;
+        border-left: 13px solid $dark-color;
+        padding: 0;
+        padding-left: 24px;
+        line-height: 1em;
+    }
+
+    .mini_logo {
+        width: 400px;
+        height: 100%;
+    }
+}
+
+
+.intro {
+    width: 100%;
+    padding: 230px 0 200px;
+
+    h1 {
+        font-family: $main-font;
+        width: 1200px;
+        margin-bottom: 60px;
+    }
+
+    p {
+        width: 1160px;
+        line-height: 40px;
+        letter-spacing: 0.04em;
+        padding-left: 30px;
+        border-left: 13px solid $dark-color;
+    }
+
+    .buttons {
+        margin-top: 70px;
+
+        a {
+            width: 380px;
+        }
+
+        >a {
+            margin-right: 50px;
+        }
+
+        .log_button,
+        .reg_button {
+            @include button($clr: $yellow-color);
+        }
+
+        .reg_button {
+            background-color: $pink-color;
+        }
+
+    }
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+        font-family: $main-font;
+        font-weight: 600;
+        font-size: 48px;
+        width: auto;
+        margin: 0px auto 60px;
+        border-right: 13px solid $dark-color;
+        display: inline-block;
+        padding-right: 20px;
+    }
+}
+
+.lists__inner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+
+    .lists__inner__item {
+        width: 320px;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 30px 20px 50px;
+        margin-bottom: 30px;
+        margin-right: 30px;
+        border: 2px solid #fff;
+        text-align: center;
+        cursor: pointer;
+
+        .img {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 30px;
+
+            // Потім видалити
+            height: 280px;
+            background-color: #ccc;
+
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 32px;
+            letter-spacing: 0.085em;
+        }
+
+        &:hover,
+        &:focus {
+            top: -7px;
+            left: -7px;
+            box-shadow: 7px 7px 0px $dark-color;
+            border: 2px solid $dark-color;
+        }
+    }
+}
+
+.form {
+    width: 520px;
+    margin: 0 auto;
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+        border: 3px solid $dark-color;
+
+        &:active,
+        &:focus {
+            box-shadow: 0px 0px 0px 7px #92FFFF;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 190px;
+        max-height: 500px;
+    }
+
+    input[type="submit"] {
+        @include button($clr: #fff, $shclr: $pink-color);
+    }
+}
+
+.footer {
+    width: 100%;
+    min-height: 100px;
+    background-color: $blue-color;
+    margin-top: 100px;
+
+    img {
+        width: 750px;
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        margin-top: -30px;
+    }
+
+    .nav {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        a {
+            width: auto;
+            display: block;
+            font-weight: 500;
+            margin: 70px 50px 50px 0px;
+            box-sizing: content-box;
+
+            &:hover,
+            &:active {
+                text-decoration: underline;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                position: relative;
+                float: right;
+                margin-top: 15px;
+                margin-left: 50px;
+                height: 6px;
+                width: 38px;
+                background-color: $dark-color;
+            }
+
+            &:last-of-type {
+                margin-right: 0px;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 0px;
+
+    & .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    & .header .conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form {
+        width: 600px;
+
+        .autorization__form__submit {
+            @include button($clr: $yellow-color, $shclr: $dark-color);
+        }
+
+        .registration__form__submit {
+            @include button($clr: $pink-color, $shclr: $dark-color);
+        }
+
+        p {
+            width: 100%;
+            border: none;
+            text-align: center;
+            padding: 0;
+            margin: 20px 0px;
+
+            a {
+                font-weight: 700;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

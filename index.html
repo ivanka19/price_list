@@ -7,73 +7,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Price list</title>
 
+    <!-- Bootstrap .css styles import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Fonts import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Source+Code+Pro:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Source+Code+Pro:wght@400;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <div class="intro">
         <header class="header">
-            <div class="conteiner">
-                <img src="img/logo.svg" class="logo" alt="">
+            <div class="container-xl">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6">
+                        <img src="../img/logo.svg" alt="logo" class="logo">
+                    </div>
+                </div>
             </div>
         </header>
 
-        <div class="conteiner">
-            <h1>Розробіть прейскурант для свого бізнесу за 10 хвилин</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros enim, scelerisque non augue a,
-                euismod porta massa. Praesent vestibulum commodo pharetra. Ut ultricies, diam vitae maximus pretium,
-                arcu nulla dapibus leo, in facilisis mi velit at urna. Donec sagittis ultrices leo eget posuere.
-                Pellentesque suscipit est vel dolor vehicula volutpat.</p>
-            <div class="buttons">
-                <a href="pages/authorization.html" class="log_button"> Увійти </a>
-                <a href="pages/registration.html" class="reg_button"> Зареєструватись </a>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-12 col-md-10 mb-4">
+                    <h1>Розробіть прейскурант для свого бізнесу за 10 хвилин</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-8 mb-5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eros enim, scelerisque non augue
+                        a, euismod porta massa. Praesent vestibulum commodo pharetra. Ut ultricies, diam vitae maximus
+                        pretium, arcu nulla dapibus leo, in facilisis mi velit at urna. Donec sagittis ultrices leo eget
+                        posuere. Pellentesque suscipit est vel dolor vehicula volutpat.</p>
+                </div>
+            </div>
+            <div class="row buttons">
+                <div class="col-12 col-md-4 my-3">
+                    <a href="pages/authorization.html" class="btn-intro-log p-3"> Увійти </a>
+                </div>
+                <div class="col-12 col-md-4 my-3">
+                    <a href="pages/registration.html" class="btn-intro-reg p-3"> Зареєструватись </a>
+                </div>
             </div>
         </div>
     </div>
 
-    <section class="section">
-        <div class="conteiner">
-            <h2>Створені прайс-листи</h2>
-            <div class="lists__inner">
-                <!-- PHP GENERATION START -->
-                <a href="" class="lists__inner__item">
-                    <div class="img"></div>
-                    <h3>Назва компанії</h3>
-                </a>
-                <!-- PHP GENERATION END -->
+    <section class="section company-list" id="companies">
+        <div class="container-xl">
+            <h2 class="mb-5 px-4">Створені прайс-листи</h2>
+            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-md-5 offset-1">
+                                <img src="../img/company-logo.png" class="card-img-top" alt="...">
+                            </div>
+                            <div class="col-10 col-md-5">
+
+                            </div>
+
+                            <!-- <div class="col-3">
+                                <a class="card p-2 m-2" href="">
+                                    <img src="../img/company-logo.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Назва компанії</h3>
+                                        <p class="card-text d-none d-md-inline-block">Some quick example text to build
+                                            on the
+                                            card title and make
+                                            up the bulk of the card's content.</p>
+                                    </div>
+                                </a>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <i class="bi bi-caret-left"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <i class="bi bi-caret-right"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="conteiner">
-            <h2>Зв’яжіться з нами</h2>
-            <form action="" class="form">
-                <!-- PHP Обробка форми -->
-                <input type="text" placeholder="Ваше ім'я" name="name" required>
-                <input type="email" placeholder="Електронна адреса" name="email" required>
-                <textarea id="message" placeholder="Ваше повідомлення..." name="message" required></textarea>
-                <input type="submit" value="Надіслати">
-                <!-- PHP -->
-            </form>
+    <section class="section" id="feedback-form">
+        <div class="container-xl">
+            <h2 class="mb-5 px-4">Зв’яжіться з нами</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-md-5">
+                    <form action="" class="form">
+                        <!-- PHP Обробка форми -->
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <input class="p-2" type="text" placeholder="Ваше ім'я" name="name" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <input class="p-2" type="email" placeholder="Електронна адреса" name="email" required>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <textarea class="p-2" id="message" placeholder="Ваше повідомлення..." name="message"
+                                    required></textarea>
+                            </div>
+                            <div class="col-12 p-2">
+                                <input class="p-3" type="submit" value="Надіслати">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <footer class="footer">
-        <img src="img/logo.svg" alt="">
+    <footer class="footer mt-5 pb-4">
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                    <img src="../img/logo.svg" alt="logo" class="logo">
+                </div>
+            </div>
 
-        <nav class="nav">
-            <a href="">Правила користування</a>
-            <a href="pages/authorization.html">Вхід до системи</a>
-            <a href="pages/registration.html">Реєстрація</a>
-        </nav>
+            <div class="row justify-content-center align-items-center  nav mb-4">
+                <div class="col col-12 col-md-3">
+                    <a href="">Правила користування</a>
+                </div>
+                <div class="col col-12 col-md-3">
+                    <a href="pages/authorization.html">Вхід до системи</a>
+                </div>
+                <div class="col col-12 col-md-3">
+                    <a href="pages/registration.html">Реєстрація</a>
+                </div>
+            </div>
+            <p>© 2022 Всі права захищені.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap .js script import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
