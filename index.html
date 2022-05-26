@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <div class="intro">
+    <div class="intro py-5">
         <header class="header">
             <div class="container-xl">
                 <div class="row justify-content-center">
@@ -36,9 +36,9 @@
             </div>
         </header>
 
-        <div class="container-xl">
+        <div class="container-xl mt-5">
             <div class="row">
-                <div class="col-12 col-md-10 mb-4">
+                <div class="col-12 col-md-10 mb-4 mt-5">
                     <h1>Розробіть прейскурант для свого бізнесу за 10 хвилин</h1>
                 </div>
             </div>
@@ -61,60 +61,49 @@
         </div>
     </div>
 
-    <section class="section company-list" id="companies">
+    <section class="section company-list my-5" id="companies">
         <div class="container-xl">
             <h2 class="mb-5 px-4">Створені прайс-листи</h2>
             <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
 
                     <div class="carousel-item active">
-
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-md-5 offset-1">
-                                <img src="../img/company-logo.png" class="card-img-top" alt="...">
-                            </div>
-                            <div class="col-10 col-md-5">
-
-                            </div>
-
-                            <!-- <div class="col-3">
-                                <a class="card p-2 m-2" href="">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-sm-3">
+                                <a class="card m-2" href="">
                                     <img src="../img/company-logo.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h3 class="card-title">Назва компанії</h3>
-                                        <p class="card-text d-none d-md-inline-block">Some quick example text to build
-                                            on the
-                                            card title and make
-                                            up the bulk of the card's content.</p>
+                                        <h4 class="card-title">Назва компанії1</h4>
                                     </div>
                                 </a>
-                            </div> -->
+                            </div>
+
+                            <!-- По 3 колонки -->
 
                         </div>
 
                     </div>
-
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                <button class="carousel-control-prev d-none d-md-block" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <i class="bi bi-caret-left"></i>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                <button class="carousel-control-next d-none d-md-block" type="button"
+                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
                     <i class="bi bi-caret-right"></i>
                 </button>
             </div>
         </div>
     </section>
 
-    <section class="section" id="feedback-form">
+    <section class="section my-5" id="feedback-form">
         <div class="container-xl">
             <h2 class="mb-5 px-4">Зв’яжіться з нами</h2>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-md-5">
-                    <form action="" class="form">
-                        <!-- PHP Обробка форми -->
+                    <form action="" class="form mb-4">
+                        <!-- Обробка форми -->
                         <div class="row">
                             <div class="col-12 mb-3">
                                 <input class="p-2" type="text" placeholder="Ваше ім'я" name="name" required>

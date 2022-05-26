@@ -11,6 +11,7 @@ body {
     font-family: $regular-font;
     color: $dark-color;
     font-size: 140%;
+    overflow-x: hidden;
 }
 
 a,
@@ -61,7 +62,7 @@ select {
     top: 0;
     left: 0;
     right: 0;
-    z-index: -99;
+    z-index: 99;
 
     .logo {
         width: 100%;
@@ -89,9 +90,6 @@ select {
 
 
 .intro {
-    margin-top: 30px;
-    padding: 10% 0;
-
     h1 {
         font-family: $main-font;
         font-weight: 700;
@@ -115,7 +113,6 @@ select {
 
 .section {
     text-align: center;
-    padding-bottom: 5%;
 
     h2 {
         font-family: $main-font;
@@ -138,11 +135,11 @@ select {
         }
 
         .carousel-control-prev {
-            left: -3%;
+            // left: -3%;
         }
 
         .carousel-control-next {
-            right: -3%;
+            // right: -2%;
         }
     }
 
@@ -157,10 +154,6 @@ select {
 
         img {
             width: 100%;
-        }
-
-        h3 {
-            font-weight: 600;
         }
 
         &:hover,
@@ -238,5 +231,5 @@ select {
 .col-8,
 .col-12,
 .col-md-6 {
-    border: 1px solid red;
+    // border: 1px solid red;
 }

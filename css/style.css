@@ -2,6 +2,7 @@ body {
   font-family: "Lato", sans-serif;
   color: #2D2D2D;
   font-size: 140%;
+  overflow-x: hidden;
 }
 
 a,
@@ -22,7 +23,7 @@ select {
   top: 0;
   left: 0;
   right: 0;
-  z-index: -99;
+  z-index: 99;
 }
 
 .header .logo {
@@ -30,11 +31,6 @@ select {
   position: relative;
   top: 58%;
   display: block;
-}
-
-.intro {
-  margin-top: 30px;
-  padding: 10% 0;
 }
 
 .intro h1 {
@@ -61,21 +57,20 @@ select {
   left: 0px;
   background-color: #FFDD63;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
-  box-shadow: 7px 7px 0px #2D2D2D;
+          box-shadow: 7px 7px 0px #2D2D2D;
   margin-bottom: 7px;
 }
 
-.intro .buttons .btn-intro-log:hover,
-.intro .buttons .btn-intro-log:focus {
+.intro .buttons .btn-intro-log:hover, .intro .buttons .btn-intro-log:focus {
   top: 7px;
   left: 7px;
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
-  box-shadow: 0px 0px 0px #2D2D2D;
+          box-shadow: 0px 0px 0px #2D2D2D;
 }
 
 .intro .buttons .btn-intro-log:active {
   -webkit-box-shadow: inset 7px 7px 0px #ffcc17;
-  box-shadow: inset 7px 7px 0px #ffcc17;
+          box-shadow: inset 7px 7px 0px #ffcc17;
 }
 
 .intro .buttons .btn-intro-reg {
@@ -92,26 +87,24 @@ select {
   left: 0px;
   background-color: #FFA9B8;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
-  box-shadow: 7px 7px 0px #2D2D2D;
+          box-shadow: 7px 7px 0px #2D2D2D;
   margin-bottom: 7px;
 }
 
-.intro .buttons .btn-intro-reg:hover,
-.intro .buttons .btn-intro-reg:focus {
+.intro .buttons .btn-intro-reg:hover, .intro .buttons .btn-intro-reg:focus {
   top: 7px;
   left: 7px;
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
-  box-shadow: 0px 0px 0px #2D2D2D;
+          box-shadow: 0px 0px 0px #2D2D2D;
 }
 
 .intro .buttons .btn-intro-reg:active {
   -webkit-box-shadow: inset 7px 7px 0px #ff5d79;
-  box-shadow: inset 7px 7px 0px #ff5d79;
+          box-shadow: inset 7px 7px 0px #ff5d79;
 }
 
 .section {
   text-align: center;
-  padding-bottom: 5%;
 }
 
 .section h2 {
@@ -130,14 +123,6 @@ select {
   color: #2D2D2D;
 }
 
-.company-list .carousel .carousel-control-prev {
-  left: -3%;
-}
-
-.company-list .carousel .carousel-control-next {
-  right: -3%;
-}
-
 .company-list .card {
   color: #2D2D2D;
   border: 2px solid rgba(0, 0, 0, 0);
@@ -152,16 +137,11 @@ select {
   width: 100%;
 }
 
-.company-list .card h3 {
-  font-weight: 600;
-}
-
-.company-list .card:hover,
-.company-list .card:focus {
+.company-list .card:hover, .company-list .card:focus {
   top: -7px;
   left: -7px;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
-  box-shadow: 7px 7px 0px #2D2D2D;
+          box-shadow: 7px 7px 0px #2D2D2D;
   border: 2px solid #2D2D2D;
 }
 
@@ -172,12 +152,11 @@ select {
   border: 3px solid #2D2D2D;
 }
 
-.form input:active,
-.form input:focus,
+.form input:active, .form input:focus,
 .form textarea:active,
 .form textarea:focus {
   -webkit-box-shadow: 0px 0px 0px 7px #92FFFF;
-  box-shadow: 0px 0px 0px 7px #92FFFF;
+          box-shadow: 0px 0px 0px 7px #92FFFF;
 }
 
 .form textarea {
@@ -198,21 +177,20 @@ select {
   left: 0px;
   background-color: #fff;
   -webkit-box-shadow: 7px 7px 0px #FFA9B8;
-  box-shadow: 7px 7px 0px #FFA9B8;
+          box-shadow: 7px 7px 0px #FFA9B8;
   margin-bottom: 7px;
 }
 
-.form input[type="submit"]:hover,
-.form input[type="submit"]:focus {
+.form input[type="submit"]:hover, .form input[type="submit"]:focus {
   top: 7px;
   left: 7px;
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
-  box-shadow: 0px 0px 0px #2D2D2D;
+          box-shadow: 0px 0px 0px #2D2D2D;
 }
 
 .form input[type="submit"]:active {
   -webkit-box-shadow: inset 7px 7px 0px #d9d9d9;
-  box-shadow: inset 7px 7px 0px #d9d9d9;
+          box-shadow: inset 7px 7px 0px #d9d9d9;
 }
 
 .footer {
@@ -240,20 +218,10 @@ select {
   transition: all .1s linear;
 }
 
-.footer .nav a:hover,
-.footer .nav a:active,
-.footer .nav a:focus {
+.footer .nav a:hover, .footer .nav a:active, .footer .nav a:focus {
   border-bottom: 2px solid #2D2D2D;
 }
 
 .footer p {
   text-align: center;
-}
-
-.container-xl,
-.col,
-.col-8,
-.col-12,
-.col-md-6 {
-  border: 1px solid red;
 }
