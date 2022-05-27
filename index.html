@@ -25,9 +25,9 @@
 </head>
 
 <body>
-    <div class="intro">
+    <div class="intro py-5">
         <header class="header">
-            <div class="container-xl">
+            <div class="container-xxl">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6">
                         <img src="img/logo.svg" alt="logo" class="logo">
@@ -36,45 +36,37 @@
             </div>
         </header>
 
-        <div class="container-xl h-100">
-            <div class="row align-items-center">
-                <div class="col-12">
-
-                    <div class="row mt-md-5">
-                        <div class="col-12 col-md-10 mb-4 mt-5">
-                            <h1>Розробіть прейскурант для свого бізнесу за лічені хвилини</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-md-8 mb-4 mb-md-5">
-                            <p class="border-start ps-4">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing
-                                elit. Donec eros
-                                enim,
-                                scelesrisque non augue
-                                a, euismod porta massa. Praesent vestibulum commodo pharetra. Ut ultricies, diam vitae
-                                maximus
-                                pretium, arcu nulla dapibus leo, in facilisis mi velit at urna. Donec sagittis ultrices
-                                leo eget
-                                posuere. Pellentesque suscipit est vel dolor vehicula volutpat.</p>
-                        </div>
-                    </div>
-                    <div class="row buttons justify-content-center justify-content-sm-start">
-                        <div class="col-10 col-sm-7 col-md-4 col-xl-3 my-2 my-md-0">
-                            <a href="pages/authorization.html" class="btn-intro-log p-3"> Увійти </a>
-                        </div>
-                        <div class="col-10 col-sm-7 col-md-4 col-xl-3 my-2 my-md-0">
-                            <a href="pages/registration.html" class="btn-intro-reg p-3"> Зареєструватись </a>
-                        </div>
-                    </div>
-
+        <div class="container-xxl mt-5">
+            <div class="row mt-md-5">
+                <div class="col-12 col-md-10 mb-4 mt-lg-5">
+                    <h1>Розробіть прейскурант для свого бізнесу за лічені хвилини</h1>
+                </div>
+                <div class="col-12 col-md-7 mb-4 mb-md-5">
+                    <p class="ps-4">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing
+                        elit. Donec eros
+                        enim,
+                        scelesrisque non augue
+                        a, euismod porta massa. Praesent vestibulum commodo pharetra. Ut ultricies, diam vitae
+                        maximus
+                        pretium, arcu nulla dapibus leo, in facilisis mi velit at urna. Donec sagittis ultrices
+                        leo eget
+                        posuere. Pellentesque suscipit est vel dolor vehicula volutpat.</p>
+                </div>
+            </div>
+            <div class="row buttons justify-content-center justify-content-sm-start">
+                <div class="col-10 col-sm-7 col-md-4 col-xl-3 my-2 my-md-0">
+                    <a href="login/" class="btn-intro-log p-3"> Увійти </a>
+                </div>
+                <div class="col-10 col-sm-7 col-md-4 col-xl-3 my-2 my-md-0">
+                    <a href="registration/" class="btn-intro-reg p-3"> Зареєструватись </a>
                 </div>
             </div>
         </div>
     </div>
 
     <section class="section company-list my-5" id="companies">
-        <div class="container-xl">
+        <div class="container-xxl">
             <h2 class="mb-5 px-4">Створені прайс-листи</h2>
             <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -83,9 +75,15 @@
                         <div class="row justify-content-center">
                             <div class="col-10 col-sm-3">
                                 <a class="card m-2" href="">
-                                    <img src="img/company-logo.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Назва компанії1</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-8 col-sm-12">
+                                            <img src="img/company-logo.png" class="card-img-top" alt="...">
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Назва компанії1</h4>
+                                            </div>
+                                        </div>
                                     </div>
                                 </a>
                             </div>
@@ -110,7 +108,7 @@
     </section>
 
     <section class="section my-5" id="feedback-form">
-        <div class="container-xl">
+        <div class="container-xxl">
             <h2 class="mb-5 px-4">Зв’яжіться з нами</h2>
             <div class="row justify-content-center">
                 <div class="col-12 col-sm-8 col-md-5">
@@ -139,7 +137,7 @@
     </section>
 
     <footer class="footer mt-5 pb-4">
-        <div class="container-xl">
+        <div class="container-xxl">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
                     <img src="img/logo.svg" alt="logo" class="logo">
@@ -147,14 +145,14 @@
             </div>
 
             <div class="row justify-content-center align-items-center  nav mb-4">
-                <div class="col col-12 col-md-3">
+                <div class="col col-12 col-md-3 mb-1 mb-md-0">
                     <a href="">Правила користування</a>
                 </div>
-                <div class="col col-12 col-md-3">
-                    <a href="pages/authorization.html">Вхід до системи</a>
+                <div class="col col-12 col-md-3 mb-1 mb-md-0">
+                    <a href="login/">Вхід до системи</a>
                 </div>
-                <div class="col col-12 col-md-3">
-                    <a href="pages/registration.html">Реєстрація</a>
+                <div class="col col-12 col-md-3 mb-1 mb-md-0">
+                    <a href="registration/">Реєстрація</a>
                 </div>
             </div>
             <p>© 2022 Всі права захищені.</p>

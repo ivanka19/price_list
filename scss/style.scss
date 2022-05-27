@@ -14,6 +14,12 @@ body {
     overflow-x: hidden;
 }
 
+*::selection {
+    color: #fff;
+    background: $pink-color;
+
+}
+
 a,
 input,
 button,
@@ -58,11 +64,11 @@ select {
 .header {
     width: 100%;
     background-color: $blue-color;
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
 
     .logo {
         width: 100%;
@@ -74,7 +80,7 @@ select {
     h2 {
         font-family: $main-font;
         font-weight: 600;
-        // border-left: 13px solid $dark-color;
+        border-left: 10px solid $dark-color;
     }
 
     .mini_logo {
@@ -82,26 +88,14 @@ select {
     }
 }
 
-
 .intro {
-    height: 100vh;
-
     h1 {
         font-family: $main-font;
         font-weight: 700;
     }
 
-    .container-xl {
-        border: 1px solid;
-        background-color: #FFA9B8
-    }
-
     p {
-        // display: block;
-        border-width: 10px !important;
-        border-color: $dark-color  !important;
-        // padding-left: 30px;
-        // border-left: 13px solid $dark-color;
+        border-left: 10px solid $dark-color;
     }
 
     .buttons {
