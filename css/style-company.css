@@ -2,14 +2,16 @@
 .col-4,
 .col-md-2,
 .col-1,
-.col-12 {
+.col-12,
+.col {
   border: 1px solid;
 }
 
 .col-4,
 .col-md-2,
 .col-1,
-.col-12 {
+.col-12,
+.col {
   background-color: darkgray;
 }
 
@@ -23,14 +25,9 @@
 }
 
 .company-logo {
-  width: 100%;
-  position: relative;
-  top: 20%;
-}
-
-.company-intro h1 {
-  font-family: "Source Code Pro", monospace;
-  font-weight: 700;
+  display: block;
+  max-width: 150px;
+  position: absolute;
 }
 
 .company-social {
@@ -43,4 +40,17 @@
 
 .company-social:hover, .company-social:focus, .company-social:active {
   color: #141414;
+}
+
+.company-footer p img {
+  display: inline;
+  width: 200px;
+}
+
+.company-footer-logo {
+  width: 100%;
+}
+
+.header p {
+  background-color: #fff;
 }

@@ -2,14 +2,16 @@
 .col-4,
 .col-md-2,
 .col-1,
-.col-12 {
+.col-12,
+.col {
     border: 1px solid;
 }
 
 .col-4,
 .col-md-2,
 .col-1,
-.col-12 {
+.col-12,
+.col {
     background-color: darkgray;
 }
 
@@ -35,18 +37,22 @@ $pink-color: #FFA9B8;
 
 .company {
 
+    &-header {}
+
     &-logo {
-        width: 100%;
-        position: relative;
-        top: 20%;
+        display: block;
+        max-width: 150px;
+        // width: 250px;
+        // height: 250px;
+        position: absolute;
     }
 
     &-intro {
 
-        h1 {
-            font-family: $main-font;
-            font-weight: 700;
-        }
+        // h1 {
+        //     font-family: $main-font;
+        //     font-weight: 700;
+        // }
     }
 
     &-social {
@@ -68,5 +74,23 @@ $pink-color: #FFA9B8;
 
     }
 
+    &-footer {
+        p {
+            img {
+                display: inline;
+                width: 200px;
+            }
+        }
 
+        &-logo {
+            width: 100%;
+        }
+    }
+
+}
+
+.header {
+    p {
+        background-color: #fff;
+    }
 }
