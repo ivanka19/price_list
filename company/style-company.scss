@@ -1,0 +1,36 @@
+.container-xxl,
+.col-4,
+.col-md-2,
+.col-1,
+.col-12 {
+    border: 1px solid;
+}
+
+$user-color: rgb(236, 155, 155);
+$regular-font: 'Lato', sans-serif;
+$main-font: 'Source Code Pro', monospace;
+
+
+.header,
+.footer {
+    background-color: $user-color;
+}
+
+.company {
+
+    &-logo {
+        width: 100%;
+        position: relative;
+        top: 20%;
+    }
+
+    &-intro {
+
+        h1 {
+            font-family: $main-font;
+            font-weight: 700;
+        }
+    }
+
+
+}

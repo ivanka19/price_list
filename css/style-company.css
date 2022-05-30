@@ -1,0 +1,23 @@
+.container-xxl,
+.col-4,
+.col-md-2,
+.col-1,
+.col-12 {
+  border: 1px solid;
+}
+
+.header,
+.footer {
+  background-color: #ec9b9b;
+}
+
+.company-logo {
+  width: 100%;
+  position: relative;
+  top: 20%;
+}
+
+.company-intro h1 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+}
