@@ -6,6 +6,17 @@
   border: 1px solid;
 }
 
+.col-4,
+.col-md-2,
+.col-1,
+.col-12 {
+  background-color: darkgray;
+}
+
+.col-12 {
+  background-color: #ec9b9b;
+}
+
 .header,
 .footer {
   background-color: #ec9b9b;
@@ -20,4 +31,16 @@
 .company-intro h1 {
   font-family: "Source Code Pro", monospace;
   font-weight: 700;
+}
+
+.company-social {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #2D2D2D;
+}
+
+.company-social:hover, .company-social:focus, .company-social:active {
+  color: #141414;
 }

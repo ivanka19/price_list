@@ -6,9 +6,26 @@
     border: 1px solid;
 }
 
+.col-4,
+.col-md-2,
+.col-1,
+.col-12 {
+    background-color: darkgray;
+}
+
+.col-12 {
+    background-color: rgb(236, 155, 155);
+}
+
 $user-color: rgb(236, 155, 155);
 $regular-font: 'Lato', sans-serif;
 $main-font: 'Source Code Pro', monospace;
+
+$white-color: #FFFFFF;
+$dark-color: #2D2D2D;
+$yellow-color: #FFDD63;
+$blue-color: #92FFFF;
+$pink-color: #FFA9B8;
 
 
 .header,
@@ -30,6 +47,25 @@ $main-font: 'Source Code Pro', monospace;
             font-family: $main-font;
             font-weight: 700;
         }
+    }
+
+    &-social {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        color: $dark-color;
+        // // 
+
+        // background-color: aqua;
+        // text-align: center;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: darken($color: $dark-color, $amount: 10)
+        }
+
     }
 
 
