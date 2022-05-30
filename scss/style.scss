@@ -64,11 +64,6 @@ select {
 .header {
     width: 100%;
     background-color: $blue-color;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 99;
 
     .logo {
         width: 100%;
