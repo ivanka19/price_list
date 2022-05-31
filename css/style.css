@@ -55,6 +55,12 @@ select {
   border-left: 10px solid #2D2D2D;
 }
 
+.intro p a {
+  color: #2D2D2D;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .intro .buttons .btn-intro-log {
   width: 100%;
   border-radius: 0;

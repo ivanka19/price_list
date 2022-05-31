@@ -90,6 +90,12 @@ select {
 
     p {
         border-left: 10px solid $dark-color;
+
+        a {
+            color: $dark-color;
+            font-weight: 700;
+            text-decoration: underline;
+        }
     }
 
     .buttons {

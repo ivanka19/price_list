@@ -8,10 +8,10 @@ $yellow-color: #FFDD63;
 $blue-color: #92FFFF;
 $pink-color: #FFA9B8;
 
-// .col {
-//     border: 1px solid;
-//     background-color: darkgray;
-// }
+.col {
+    border: 1px solid;
+    background-color: darkgray;
+}
 
 .company {
 
@@ -24,8 +24,6 @@ $pink-color: #FFA9B8;
         max-width: 100%;
         max-height: 100px;
     }
-
-    // &-intro {}
 
     &-social {
         display: block;

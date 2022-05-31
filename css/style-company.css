@@ -1,3 +1,8 @@
+.col {
+  border: 1px solid;
+  background-color: darkgray;
+}
+
 .company-header {
   background-color: #ec9b9b;
 }
