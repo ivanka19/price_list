@@ -1,33 +1,11 @@
-.container-xxl,
-.col-4,
-.col-md-2,
-.col-1,
-.col-12,
-.col {
-  border: 1px solid;
-}
-
-.col-4,
-.col-md-2,
-.col-1,
-.col-12,
-.col {
-  background-color: darkgray;
-}
-
-.col-12 {
-  background-color: #ec9b9b;
-}
-
-.header,
-.footer {
+.company-header {
   background-color: #ec9b9b;
 }
 
 .company-logo {
   display: block;
-  max-width: 150px;
-  position: absolute;
+  max-width: 100%;
+  max-height: 100px;
 }
 
 .company-social {
@@ -42,15 +20,6 @@
   color: #141414;
 }
 
-.company-footer p img {
-  display: inline;
-  width: 200px;
-}
-
-.company-footer-logo {
-  width: 100%;
-}
-
-.header p {
-  background-color: #fff;
+.company-footer {
+  background-color: #ec9b9b;
 }
