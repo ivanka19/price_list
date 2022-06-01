@@ -227,7 +227,7 @@ select {
   text-align: center;
 }
 
-.footer .nav a {
+.footer .nav .col a {
   font-family: "Lato", sans-serif;
   color: #2D2D2D;
   font-weight: 500;
@@ -236,7 +236,7 @@ select {
   transition: all .1s linear;
 }
 
-.footer .nav a:hover, .footer .nav a:active, .footer .nav a:focus {
+.footer .nav .col a:hover, .footer .nav .col a:active, .footer .nav .col a:focus {
   border-bottom: 2px solid #2D2D2D;
 }
 
