@@ -33,15 +33,17 @@
                 <div class="col col-6 col-md-3 d-flex align-items-center">
                     <div class="row">
                         <div class="col col-12">
-                            <p class="mb-2">Місто розташування</p>
+                            <!-- <p class="mb-2">Місто розташування</p> -->
+                            <p class="mb-2">Рівне</p>
                         </div>
                         <div class="col col-12">
-                            <p class="my-0">Номер телефону</p>
+                            <!-- <p class="my-0">Номер телефону</p> -->
+                            <p class="my-0">+38 (011) 22 33 444</p>
                         </div>
                     </div>
                 </div>
                 <div class="col col-6 col-md-6 d-flex justify-content-center">
-                    <img src="img/company-logo.png" alt="logo" class="company-logo">
+                    <img src="img/logo.png" alt="logo" class="company-logo">
                 </div>
                 <div class="col col-md-3"></div>
             </div>
@@ -109,6 +111,7 @@
         </div>
     </div>
 
+
     <section class="section my-5">
         <div class="container-xxl">
             <div class="row">
@@ -122,25 +125,21 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarCategory">
 
-                            <form action="">
+                            <form action="" class="my-3 my-md-0">
 
-                                <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"
-                                            data-bs-toggle="tooltip" data-bs-html="true">
-                                        <label class="form-check-label" for="flexCheckDefault1">
-                                            Категорія 1
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"
+                                        data-bs-toggle="tooltip" data-bs-html="true">
+                                    <label class="form-check-label" for="flexCheckDefault1">
+                                        Категорія 1
+                                    </label>
                                 </div>
 
-                                <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                        <label class="form-check-label text-start" for="flexCheckDefault2">
-                                            Категорія 2
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label class="form-check-label" for="flexCheckDefault2">
+                                        Категорія 2
+                                    </label>
                                 </div>
 
                             </form>
@@ -149,18 +148,92 @@
                     </nav>
                 </div>
 
-                <div class="col col-12 col-md-9 col-lg-10 d-flex flex-wrap justify-content-center justify-content-md-2">
+                <div
+                    class="col col-12 col-md-9 col-lg-10 d-flex flex-wrap justify-content-around justify-content-md-start">
 
-
-
-                    <div class="card p-1" style="width: 12rem;">
-                        <img src="../img/company-logo.png" class="card-img-top ratio ratio-4x3" alt="...">
+                    <!-- Початок генерації товарів -->
+                    <div class="company-product card border-0 p-1 mx-2 mb-2" style="width: 15rem;">
+                        <div class="company-product-img ratio ratio-1x1 border-0"
+                            style="background-image: URL('img/product-1.png')">
+                        </div>
                         <div class="card-body">
-                            <h5 class="card-title text-start">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
+                            <h5 class="card-title text-start mb-3">Назва продукту</h5>
+                            <p class="card-text text-start mb-5">
+                                <span class="price pe-1">350</span>
+                                <!-- <span class="price old-price pe-1">550</span>
+                                <span class="price new-price pe-1">250</span> -->
+                                ГРН
+                            </p>
+                            <button href="#"
+                                class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">Детальніше</button>
+
+                        </div>
+
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+                                role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Назва продукту</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col col-12 col-md-6">
+                                                    <div class="company-product-img ratio ratio-1x1 border-0"
+                                                        style="background-image: URL('img/product-1.png')">
+                                                    </div>
+                                                </div>
+                                                <div class="col col-12 col-md-6 text-start">
+                                                    <p>
+                                                        Опис товару -- Lorem ipsum dolor sit amet, consectetur
+                                                        adipiscing elit. Donec eros enim, scelerisque non augue a,
+                                                        euismod porta massa.
+                                                        Praesent vestibulum commodo pharetra. Ut ultricies, diam vitae
+                                                        maximus pretium, arcu nulla dapibus leo, in facilisis mi velit
+                                                        at urna. Donec sagittis ultrices leo eget posuere.
+                                                    </p>
+                                                    <p class="">
+                                                        <span class="price pe-1">350</span>
+                                                        <span class="price old-price pe-1">550</span>
+                                                        <span class="price new-price pe-1">250</span>
+                                                        ГРН
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Кінець генерації товарів -->
+
+
+                    <div class="company-product card border-0 p-1 mx-2 mb-2" style="width: 15rem;">
+                        <div class="company-product-img ratio ratio-1x1 border-0"
+                            style="background-image: URL('img/product-2.png')">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-start mb-3">Досить довга назва продукту</h5>
+                            <p class="card-text text-start mb-5">
+                                <!-- <span class="price pe-1">350</span>  -->
+                                <span class="price old-price pe-1">550</span>
+                                <span class="price new-price pe-1">250</span>
+                                ГРН
+                            </p>
+                            <button href="#"
+                                class="btn btn-secondary position-absolute bottom-0 start-50 translate-middle-x"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">Детальніше</button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -169,8 +242,8 @@
     <footer class="footer company-footer py-4 mt-5">
         <div class="container-xxl">
             <div class="row justify-content-center justify-content-md-between mb-4">
-                <div class="col col-6 col-md-auto mb-3 mb-md-0"><img src="img/company-logo.png"
-                        class="company-footer-logo" alt="">
+                <div class="col col-6 col-md-auto mb-3 mb-md-0"><img src="img/logo.png" class="company-footer-logo"
+                        alt="">
                 </div>
                 <div class="col col-12 col-md-4 d-flex align-items-center">
                     <div class="w-100">

@@ -70,9 +70,6 @@ select {
   border: 3px solid #2D2D2D;
   display: block;
   text-align: center;
-  position: relative;
-  top: 0px;
-  left: 0px;
   background-color: #FFDD63;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
           box-shadow: 7px 7px 0px #2D2D2D;
@@ -80,8 +77,8 @@ select {
 }
 
 .intro .buttons .btn-intro-log:hover, .intro .buttons .btn-intro-log:focus {
-  top: 7px;
-  left: 7px;
+  -webkit-transform: translateX(7px) translateY(7px);
+          transform: translateX(7px) translateY(7px);
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
           box-shadow: 0px 0px 0px #2D2D2D;
 }
@@ -100,9 +97,6 @@ select {
   border: 3px solid #2D2D2D;
   display: block;
   text-align: center;
-  position: relative;
-  top: 0px;
-  left: 0px;
   background-color: #FFA9B8;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
           box-shadow: 7px 7px 0px #2D2D2D;
@@ -110,8 +104,8 @@ select {
 }
 
 .intro .buttons .btn-intro-reg:hover, .intro .buttons .btn-intro-reg:focus {
-  top: 7px;
-  left: 7px;
+  -webkit-transform: translateX(7px) translateY(7px);
+          transform: translateX(7px) translateY(7px);
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
           box-shadow: 0px 0px 0px #2D2D2D;
 }
@@ -187,12 +181,9 @@ select {
   font: inherit;
   color: #2D2D2D;
   font-weight: 700;
-  border: 3px solid #2D2D2D;
+  border: 3px solid #FFA9B8;
   display: block;
   text-align: center;
-  position: relative;
-  top: 0px;
-  left: 0px;
   background-color: #fff;
   -webkit-box-shadow: 7px 7px 0px #FFA9B8;
           box-shadow: 7px 7px 0px #FFA9B8;
@@ -200,10 +191,10 @@ select {
 }
 
 .form input[type="submit"]:hover, .form input[type="submit"]:focus {
-  top: 7px;
-  left: 7px;
-  -webkit-box-shadow: 0px 0px 0px #2D2D2D;
-          box-shadow: 0px 0px 0px #2D2D2D;
+  -webkit-transform: translateX(7px) translateY(7px);
+          transform: translateX(7px) translateY(7px);
+  -webkit-box-shadow: 0px 0px 0px #FFA9B8;
+          box-shadow: 0px 0px 0px #FFA9B8;
 }
 
 .form input[type="submit"]:active {
@@ -254,9 +245,6 @@ select {
   border: 3px solid #2D2D2D;
   display: block;
   text-align: center;
-  position: relative;
-  top: 0px;
-  left: 0px;
   background-color: #FFDD63;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
           box-shadow: 7px 7px 0px #2D2D2D;
@@ -264,8 +252,8 @@ select {
 }
 
 .registration .form .autorization-submit:hover, .registration .form .autorization-submit:focus {
-  top: 7px;
-  left: 7px;
+  -webkit-transform: translateX(7px) translateY(7px);
+          transform: translateX(7px) translateY(7px);
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
           box-shadow: 0px 0px 0px #2D2D2D;
 }
@@ -284,9 +272,6 @@ select {
   border: 3px solid #2D2D2D;
   display: block;
   text-align: center;
-  position: relative;
-  top: 0px;
-  left: 0px;
   background-color: #FFA9B8;
   -webkit-box-shadow: 7px 7px 0px #2D2D2D;
           box-shadow: 7px 7px 0px #2D2D2D;
@@ -294,8 +279,8 @@ select {
 }
 
 .registration .form .registration-submit:hover, .registration .form .registration-submit:focus {
-  top: 7px;
-  left: 7px;
+  -webkit-transform: translateX(7px) translateY(7px);
+          transform: translateX(7px) translateY(7px);
   -webkit-box-shadow: 0px 0px 0px #2D2D2D;
           box-shadow: 0px 0px 0px #2D2D2D;
 }

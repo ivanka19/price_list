@@ -33,27 +33,20 @@ select {
 @mixin button ($clr, $shclr: $dark-color) {
     width: 100%;
     border-radius: 0;
-    // padding: 15px;
     font: inherit;
     color: $dark-color;
     font-weight: 700;
-    border: 3px solid $dark-color;
+    border: 3px solid $shclr;
     display: block;
     text-align: center;
-    position: relative;
-    top: 0px;
-    left: 0px;
     background-color: $clr;
-    // box-shadow: 1px 1px 0px $shclr, 2px 2px 0px $shclr, 3px 3px 0px $shclr, 4px 4px 0px $shclr, 5px 5px 0px $dark-color, 6px 6px 0px $dark-color, 7px 7px 0px $dark-color;
     box-shadow: 7px 7px 0px $shclr;
-
     margin-bottom: 7px;
 
     &:hover,
     &:focus {
-        top: 7px;
-        left: 7px;
-        box-shadow: 0px 0px 0px $dark-color;
+        transform: translateX(7px) translateY(7px);
+        box-shadow: 0px 0px 0px $shclr;
     }
 
     &:active {

@@ -25,6 +25,32 @@
   color: #141414;
 }
 
+.company-product {
+  font-size: 1.2em;
+}
+
+.company-product-img {
+  background-size: cover;
+  background-position: center;
+}
+
+.company-product h5 {
+  font-weight: 700;
+}
+
+.company-product .price {
+  font-weight: 700;
+}
+
+.company-product .old-price {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
+.company-product .new-price {
+  color: #fc1b1b;
+}
+
 .company-footer {
   background-color: #ec9b9b;
 }
@@ -36,4 +62,8 @@
 
 .company-footer-logo {
   width: 100%;
+}
+
+.ratio {
+  border: 3px solid;
 }
