@@ -36,7 +36,7 @@ select {
     font: inherit;
     color: $dark-color;
     font-weight: 700;
-    border: 3px solid $shclr;
+    border: 3px solid $dark-color;
     display: block;
     text-align: center;
     background-color: $clr;
@@ -154,7 +154,6 @@ select {
     input,
     textarea {
         width: 100%;
-        padding: 10px 20px;
         border: 3px solid $dark-color;
 
         &:active,
