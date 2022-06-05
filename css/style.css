@@ -304,3 +304,7 @@ select {
 .registration .form p a:hover, .registration .form p a:active, .registration .form p a:focus {
   border-bottom: 3px solid #2D2D2D;
 }
+
+.help img {
+  width: 100%;
+}
