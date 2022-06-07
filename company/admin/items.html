@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Категорії товарів</title>
+    <title>Товари</title>
 
     <!-- Bootstrap .css styles import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -63,10 +63,10 @@
                     <a class="nav-link me-2 me-md-4" href="main-info.html">
                         <span class="fa-solid fa-info me-1"></span> Основна інформація
                     </a>
-                    <a class="nav-link me-2 me-md-4 active" href="#">
+                    <a class="nav-link me-2 me-md-4" href="category.html">
                         <span class="fa-solid fa-list me-1"></span> Категорії
                     </a>
-                    <a class="nav-link me-2 me-md-4" href="items.html">
+                    <a class="nav-link me-2 me-md-4 active" href="#">
                         <span class="fa-solid fa-tags me-1"></span> Товари
                     </a>
                     <a class="nav-link me-2 me-md-4" href="sales.html">
@@ -86,11 +86,11 @@
                 <div class="col col-12 col-md-10">
                     <div class="row">
                         <div class="col col-12 mb-4">
-                            <h1>Категорії</h1>
+                            <h1>Товари</h1>
                         </div>
                         <div class="col col-12">
-                            <p class="ps-4">На цій сторінці Ви можете змінити основну інформацію про категорії товарів.
-                                Будь ласка, не забувайте зберігати дані
+                            <p class="ps-4">На цій сторінці Ви можете змінити основну інформацію про Вашу компанію, а
+                                також персоналізувати її під власний стиль. Будь ласка, не забувайте зберігати дані
                                 форми!</p>
                         </div>
                     </div>
@@ -102,80 +102,58 @@
 
     <section class="section my-5">
         <div class="container-xxl">
-
             <form action="" class="">
-                <div class="row mb-3 align-items-center">
+
+                <div class="row mb-3">
                     <div class="col col-12">
-                        <h3 class="text-start mb-3">Створити нову категорію</h3>
+                        <h3 class="text-start mb-3">Додати новий товар</h3>
                     </div>
 
                     <div class="col col-12 col-md-6">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="company-new-category"
-                                placeholder="Назва категорії" title="Введіть назву категорії" required>
-                            <label for="company-new-category">Назва категорії</label>
+                            <input type="text" class="form-control" id="company-new-item-name"
+                                placeholder="Назва товару" title="Введіть назву нового товару" required>
+                            <label for="company-new-item-name">Назва товару</label>
                         </div>
+                        <select class="form-select p-3 mb-3" id="company-new-item-category">
+                            <option selected>Оберіть категорію</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="company-new-item-price"
+                                placeholder="Ціна товару" title="Введіть ціну" required>
+                            <label for="company-new-item-price">Ціна товару</label>
+                        </div>
+
                     </div>
 
                     <div class="col col-12 col-md-6">
-                        <div class="form-floating mb-3">
-                            <button type="submit" class="btn btn-success w-100 p-3"
-                                title="Зберегти зміну">Додати</button>
+                        <div class="mb-3 text-start">
+                            <input class="form-control" type="file" id="company-new-item-file"
+                                title="Завантажте зображення нового логотипу">
+                            <label for="company-new-item-file" class="form-label">Завантажте зображення товару</label>
                         </div>
-                    </div>
-                </div>
-            </form>
 
-            <form action="">
-                <div class="row align-items-center">
-                    <div class="col col-12">
-                        <h3 class="text-start mb-3">Редагувати існуючі категорії</h3>
-                    </div>
-                </div>
-
-                <div class="row align-items-center mb-3 mb-md-0">
-                    <div class="col col-12 col-md-4">
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="company-category-" placeholder="Назва категорії"
-                                title="" required>
-                            <label for="company-category-">Назва категорії</label>
-                        </div>
-                    </div>
-
-                    <div class="col col-12 col-md-4">
-                        <div class="form-floating mb-3">
-                            <a href="" class="btn btn-outline-success w-100 p-3" title="Зберегти">Зберегти</a>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-4">
-                        <div class="form-floating mb-3">
-                            <a href="" class="btn btn-outline-danger w-100 p-3" title="Видалити">Видалити</a>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Опис товару" id="company-new-item-descr"
+                                style="min-height: 120px; max-height: 200px;" title="Опис товару"></textarea>
+                            <label for="company-new-item-descr">Опис товару</label>
                         </div>
                     </div>
                 </div>
 
-                <div class="row align-items-center mb-3 mb-md-0">
+                <div class="row mb-3 align-items-center justify-content-center">
                     <div class="col col-12 col-md-4">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="company-category-" placeholder="Назва категорії"
-                                title="" required>
-                            <label for="company-category-">Назва категорії</label>
-                        </div>
-                    </div>
-
-                    <div class="col col-12 col-md-4">
-                        <div class="form-floating mb-3">
-                            <a href="" class="btn btn-outline-success w-100 p-3" title="Зберегти">Зберегти</a>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-md-4">
-                        <div class="form-floating mb-3">
-                            <a href="" class="btn btn-outline-danger w-100 p-3" title="Видалити">Видалити</a>
+                            <button type="submit" class="btn btn-success w-100 p-3" title="Зберегти">Зберегти</button>
                         </div>
                     </div>
                 </div>
-            </form>
+        </div>
 
+        </form>
         </div>
     </section>
 
