@@ -30,22 +30,9 @@
     <header class="header company-header">
         <div class="container-xxl">
             <div class="row py-2">
-                <div class="col col-6 col-md-3 d-flex align-items-center">
-                    <div class="row">
-                        <div class="col col-12">
-                            <!-- <p class="mb-2">Місто розташування</p> -->
-                            <p class="mb-2">Рівне</p>
-                        </div>
-                        <div class="col col-12">
-                            <!-- <p class="my-0">Номер телефону</p> -->
-                            <p class="my-0">+38 (011) 22 33 444</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-6 col-md-6 d-flex justify-content-center">
+                <div class="col col-12 d-flex justify-content-center">
                     <img src="../img/logo.png" alt="logo" class="company-logo">
                 </div>
-                <div class="col col-md-3"></div>
             </div>
         </div>
     </header>
@@ -103,7 +90,6 @@
     <section class="section my-5">
         <div class="container-xxl">
             <form action="" class="">
-
                 <div class="row mb-3">
                     <div class="col col-12">
                         <h3 class="text-start mb-3">Додати новий товар</h3>
@@ -151,9 +137,77 @@
                         </div>
                     </div>
                 </div>
-        </div>
+            </form>
 
-        </form>
+            <form action="" class="">
+
+                <div class="row mb-3">
+                    <div class="col col-12">
+                        <h3 class="text-start mb-3">Редагувати або видалити товари</h3>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col col-12 col-md-3">
+                            <div class="ratio ratio-1x1">
+                                <img src="../img/product-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-9">
+                            <div class="row">
+                                <div class="col col-12 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="company-item-name-"
+                                            placeholder="Назва товару" title="Назва товару" required>
+                                        <label for="company-item-name-">Назва товару</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="company-new-category-"
+                                            placeholder="Категорія" readonly>
+                                        <label for="company-item-catecompany-new-category-">Категорія</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="company-new-item-price"
+                                            placeholder="Ціна товару" title="Введіть ціну" required>
+                                        <label for="company-new-item-price">Ціна товару</label>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-6">
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" placeholder="Опис товару"
+                                            id="company-item-descr-" style="min-height: 130px; max-height: 200px;"
+                                            title="Опис товару"></textarea>
+                                        <label for="company-item-descr-">Опис товару</label>
+                                    </div>
+                                    <div class="form-check text-start">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            В наявності
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col col-12 col-md-4">
+                                    <div class="form-floating">
+                                        <a href="" class="btn btn-outline-success w-100 p-3"
+                                            title="Зберегти">Зберегти</a>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-md-4">
+                                    <div class="form-floating">
+                                        <a href="" class="btn btn-outline-danger w-100 p-3"
+                                            title="Видалити">Видалити</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+
+
         </div>
     </section>
 
